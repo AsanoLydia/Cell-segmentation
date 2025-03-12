@@ -1,9 +1,13 @@
 # Cell-segmentation
 A workflow for cell segmentation via Cellpose 3.0 and quantification of the mean intensity of a specific channel. The workflow includes image preprocessing, segmentation, results assessment and quantification. 
 > Author: Yi Li
+> 
 > Supervisor: Gisele Miranda
+> 
 > Period: November - December 2024
+> 
 > SciLifeLab, KTH Royal Institute of Technology
+> 
 
 This repository is developed as part of the CB3050 _Project in Life Science_ course.
 
