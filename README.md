@@ -24,3 +24,16 @@ Installation available at https://github.com/MouseLand/cellpose
 - numpy 2.0.2
 - pandas 2.2.3
 - matplotlib 3.9.3
+
+## Repository content summary
+
+| Filename |  Description|
+|--|--|
+|cellpose.ipynb  | Use the Cellpose 3.0 pre-trained model to process microscopy images with a nucleus channel and a cytoplasm channel, or grayscale images. The model predicts cell boundaries and generates labeled or binary masks, saving all results to a specified directory.|
+|Jaccard index.ipynb  | Evaluate the segmentation results by comparing them to the loaded manual annotations or other files as "true" masks, and calculate the Jaccard index (JI) for every sample. The produced JIs and their corresponding sample numbers are saved as csv table to the specified directory. |
+|mean_intensity.ipynb  | Measure the mean staining intensity in each cell based on the segmentation results. The generated mean intensities along with their corresponding sample numbers and label numbers are saved as csv tables to the specified directory.|
+
+## Requirements for input data
+
+We expect that the input images are in **tiff** format and their data type is **uint16**.
+Compatible with both grayscale and RGB images. If your input consists of multiple grayscale images representing different channels, this pipeline can merge them into a single RGB image before segmenting. However, they must share the same prefix indicating the sample ID and have distinguishable suffixes to differentiate the channels. 
